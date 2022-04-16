@@ -1,0 +1,143 @@
+// ===== ___________________________________  Card Style  ___________________________________ ===== //
+.card {
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba($color: #77777729, $alpha: 0.5);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 286px;
+  overflow: hidden;
+  &_header {
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    height: 170px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f4f4f4;
+    img {
+      width: auto;
+      max-width: auto;
+      max-height: 100%;
+      border-radius: 16px 16px 0 0;
+    }
+    &_edite {
+      position: absolute;
+      z-index: 2;
+      top: 6px;
+      right: 6px;
+      width: 35px;
+      height: 35px;
+      transform: rotate(90deg);
+      padding: 5px;
+      background: #f4f4f4 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: rotate(0);
+      }
+      svg {
+        width: 1.5rem;
+      }
+    }
+  }
+  &_body {
+    padding: 10px 15px;
+    &_title {
+      margin: 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #212121;
+      text-align: left;
+    }
+    &_price {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.4rem;
+      &_e {
+        padding: 10px;
+        border-radius: 4px;
+        background: rgb(89, 31, 248);
+        background: linear-gradient(
+          242deg,
+          rgba(89, 31, 248, 1) 0%,
+          rgba(45, 25, 150, 1) 100%
+        );
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      &_text {
+        font-size: 0.95rem;
+        color: #591ff8;
+        font-weight: 500;
+      }
+    }
+  }
+  &_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    &_front,
+    &_back {
+      //   position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    &_back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      color: #212121;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      //   align-items: center;
+      flex-direction: column;
+      padding: 35px;
+      z-index: 2;
+      &_action {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        svg {
+          width: 1.5rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+        // &__trash {
+        //   color: #ff0060;
+        // }
+        &:hover {
+          color: #ff0060;
+          fill: #ff0060;
+        }
+      }
+    }
+  }
+  &:hover {
+    // .card_header {
+    //   display: none;
+    // }
+    // .card_inner {
+    //   transform: rotateY(180deg);
+    // }
+  }
+}
+// ===== ___________________________________  Card Style  ___________________________________ ===== //

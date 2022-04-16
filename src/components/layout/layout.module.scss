@@ -1,0 +1,52 @@
+// ===== ___________________________________  Layout Style  ___________________________________ ===== //
+.header {
+  padding: 10px 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: auto;
+  z-index: 199;
+  transition: all 0.3s ease-in-out;
+  &_flex {
+    align-items: center;
+    display: flex;
+  }
+  &_brandLogo {
+    max-width: 100px;
+  }
+
+  &_list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1rem;
+    list-style: none;
+    &_item {
+      a {
+        color: #212121;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+          color: #fd7e14 !important;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__active {
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+
+    background-color: #172339;
+    position: fixed;
+    color: #fff;
+    .header_list_item {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+// ===== ___________________________________  Layout Style  ___________________________________ ===== //

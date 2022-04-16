@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 540px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+@media (min-width: 1540px) {
+  .container {
+    width: 1540px;
+  }
+}
+@media (min-width: 1780px) {
+  .container {
+    width: 1780px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.-mx-2 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.product_card_active   {
+  transform: rotateY(180deg);
+}

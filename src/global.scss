@@ -1,0 +1,43 @@
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
+* {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+html {
+  font-size: 100%;
+  @media (min-width: 320px) {
+    font-size: 83%;
+  }
+  @media (min-width: 540px) {
+    font-size: 85%;
+  }
+  @media (min-width: 768px) {
+    font-size: 90%;
+  }
+  @media (min-width: 1024px) {
+    font-size: 95%;
+  }
+  @media (min-width: 1280px) {
+    font-size: 100%;
+  }
+
+  font-weight: 400;
+}
+
+body {
+  //   font-family: "Open Sans" ;
+}
+
+/* ====================================== _____________ Reset Styles _____________ ====================================== */
